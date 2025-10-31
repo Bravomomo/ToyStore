@@ -35,7 +35,7 @@ layout: default
     'event': 'product_page_viewed',
     'product_name': '{{ page.name }}',
     'product_id': '{{ page.identifier }}',
-   'product_price': {{ page.price }},
+   'product_price': '{{ page.price }}',
   });
 </script>
 <div>
@@ -45,7 +45,7 @@ window.dataLayer.push({
  'event': 'add_to_cart',
  'product_name': '$product_name',
  'product_id': '$product_id',
- 'product_price': $product_price,
+ 'product_price': '$product_price',
  });
 </script>
 </div>
